@@ -1,0 +1,67 @@
+//<Fonts>
+//&display=swap&subset=cyrillic-ext
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700");
+
+//<Font-weights>
+$font-weights: (
+  "black": 700,
+  "bold": 600,
+  "medium": 500,
+  "regular": 400,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name)
+};
+
+//<Icon fonts>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+//<Swiper>
+// @import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+
+//<Default font>
+$fontFamily: 'Poppins', 'sans-serif';
+
+//<Variables>
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1170px;
+
+//<Colors>
+//Text, icons, logo
+$primary-color: #fff;
+$secondary-color: #a0a1a4;
+$third-color: #2500f9;
+$fourth-color: #40975f;
+$sixth-color: #242f51;
+$seventh-color: #616368;
+$eight-color: #09142e;
+$ninth-color: #f55767;
+$tenth-color: #2563ff;
+$eleventh-color: #e8e7e9;
+$twelve-color: #ebebeb;
+$thirdteen-color: #f5f7fa;
+//Cirles
+$red-circle:#ffecef;
+$blue-circle:#e9e9fc;
+$green-circle:#e4ffee;
+//Vertical line
+$vertical-line: #4b4a48;
+//Figures
+$primary-figure-color: #d5cffd;
+$secondary-figure-color: #6883de;
+//Logo
+$first-logo-color: #fcae61;
+$second-logo-color: #242f51;
+//Switcher
+$payment-main-color: #999ca5;
+$switcher-inactive-color: #616368;
+//Button-cirle
+$button-circle: #eff3f8;
+//<Gradients>
+//Buttons, animated objects
+$primary-gradient: linear-gradient(to top, #e9a484, #fe6082);
+$secondary-gradient: linear-gradient(to right, #e9a484, #fe6082);
+$third-gradient: linear-gradient(to right, #f90f77, #cb33b9);
+$charges-gradient: linear-gradient(to top, #f4f7f9, #fefefe);

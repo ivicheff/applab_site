@@ -1,0 +1,16 @@
+.companies {
+
+  &__paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: $second-logo-color;
+  }
+
+  &__logos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

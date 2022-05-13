@@ -1,0 +1,101 @@
+.charges {
+
+  &__text {
+  }
+
+  &__heading {
+    color: $sixth-color;
+    font-size: 36px;
+    line-height: 46px;
+    margin: 0 0 33px 0;
+  }
+
+  &__paragraph {
+    margin: 0 0 87px 0;
+  }
+
+  &__info {
+  }
+
+  &__switcher {
+    margin: 0 0 39px 0;
+  }
+
+  &__offers {
+    display: flex;
+
+  }
+
+  &__offer-start {
+    background-color: blue;
+  }
+
+  &__basic {
+    margin: 0 20px 0 0;
+
+  }
+
+  &__master {
+    margin: 0 0 0 20px;
+    height: 605px !important;
+  }
+
+  &__button {
+    margin: 0 0 25px 0
+  }
+
+  &__button--text {
+    margin: 0 0 9px 0;
+  }
+}
+
+.offer {
+  width: 317px;
+  height: 554px;
+  background-color: $primary-color;
+  box-shadow: 4px 55px 62px 0px rgba(144,163,177,0.18);
+  &:hover {
+    outline: 2px solid $twelve-color;
+  }
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  .payment {
+    display: flex;
+
+    margin: 70px 0 27px 0;
+    &>h1 {
+      font-family: Poppins;
+      font-size: 60px;
+      line-height: 58px;
+      font-weight: weight('bold');
+      color: $sixth-color;
+    }
+    &>p {
+      align-self: flex-end;
+    }
+  }
+  .payment-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 81px 0;
+    &>.second-heading {
+      color: $sixth-color;
+    }
+  }
+  .tools {
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    margin: 0 0 42px 0;
+  }
+  .button--blue {
+    
+  }
+
+}

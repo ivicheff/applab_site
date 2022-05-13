@@ -1,0 +1,71 @@
+.features {
+
+  &__image {
+    margin-right: 53px;
+  }
+
+  &__inner-image {
+    
+  }
+
+  &__info {
+    margin-top: 53px;
+  }
+
+  &__intro {
+    margin-bottom: 70px
+  }
+
+  &__heading--intro {
+    font-size: 36px;
+    line-height: 46px;
+    color: $sixth-color;
+    margin-bottom: 12px;
+  }
+
+  &__paragraph--intro {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+    &>.prototyping {
+      margin: 62px 0;
+    }
+
+  }
+
+  &__inner-list {
+    display: flex;
+    flex-direction: row;
+      
+    &>.circle {
+      margin-right: 32px;
+      align-self: flex-end;
+    }
+  }
+
+  &__text {
+
+  } 
+
+  &__heading--performance {
+    color: $ninth-color;
+  }
+
+  &__paragraph {
+  }
+
+  &__heading--prototyping {
+    color: $tenth-color;
+  }
+
+
+  &__heading--editing {
+    color: $fourth-color;
+  }
+
+}
+
+

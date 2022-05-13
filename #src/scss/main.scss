@@ -1,0 +1,545 @@
+@import "config";
+@import "mixins";
+@import "null";
+@import "fonts";
+@import "animations";
+@import "header";
+@import "companies";
+@import "features";
+@import "jackpots";
+@import "integration";
+@import "our-app";
+@import "ultimate";
+@import "charges";
+@import "product";
+@import "faq";
+@import "adaptive";
+
+
+* {
+  font-family: $fontFamily;
+}
+
+.header {
+  background: url('/img/city.webp') no-repeat local bottom;
+  background-size: 100%;
+  padding-top: 100px;
+}
+
+.companies {
+  max-width: 935px;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+
+.features {
+  margin-top: 150px;
+  margin-left: 220px;
+  .paragraph {
+    color: $seventh-color
+  }
+  .container {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.jackpots {
+  margin-top: 100px;
+  .paragraph {
+    color: $seventh-color
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.integration {
+  margin-top: 114px;
+  .paragraph {
+    color: $seventh-color
+  }
+  .container {
+    display: flex;
+
+  }
+}
+
+.our-app {
+  margin-top: 216px;
+  display: flex;
+  text-align: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraph {
+    color: $seventh-color
+  }
+}
+
+.ultimate {
+  margin-top: 188px;
+  display: flex;
+  justify-content: flex-end;
+
+  .paragraph {
+    color: $seventh-color
+  }
+
+}
+
+.charges {
+  margin: 173px 0 0 0;
+  text-align: center;
+  &>.container--640 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraph {
+    color: $seventh-color;
+  }
+}
+
+.product {
+  padding-top: 0;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 14.75% 0 0;
+  background:  no-repeat local left;
+  .paragraph {
+    color: $seventh-color;
+  }
+  .heading,.second-heading {
+    color: $sixth-color
+  }
+}
+
+.faq {
+  max-width: 945px;
+}
+
+
+
+//<Container>
+.container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+}
+
+.container--1030 {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.container--our-app-list {
+  max-width: 962px;
+  max-height: 562px;
+  margin: 0 auto;
+}
+
+.container--640 {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+//<Logo>
+.logo {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: weight("black");
+  .app {
+    color: $first-logo-color;
+  }
+  .lab {
+    color: $second-logo-color;
+  }
+}
+
+
+//<Navbar>
+.navbar {
+}
+
+.item {
+  color: $second-logo-color;
+  font-size: 16px;
+  line-height: 44px;
+  font-weight: 400;
+  margin: 0 18px;
+
+  &:hover {
+    color: $first-logo-color;
+  }
+
+  
+
+  &:nth-child(1) {
+    margin: 0 18px 0 0;
+  }
+
+  &:nth-last-child() {
+    text-transform: uppercase;
+    margin: 0 0 0 18px;
+  }
+}
+
+//<Plate>
+.plate {
+  max-width: 362px;
+  max-height: 35px;
+  background-color: $eleventh-color;
+  border-radius: 17.5px;
+  display: flex;
+  align-items: center;
+}
+
+.plate-circle {
+  width: 39px;
+  height: 35px;
+  margin-right: 10px;
+  background-color: $first-logo-color;
+  border-radius: 17.5px;
+  text-align: center;
+  &>.far {
+    font-size: 18px;
+    color: $primary-color;
+    transform: translate(-3%, -4%);
+  }
+}
+
+
+//<Text>
+.heading {
+  font-weight: weight("bold");
+  
+}
+
+.second-heading {
+  @extend .heading;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.paragraph {
+  font-weight: weight("medium");
+  font-size: 16px;
+  line-height: 26px;
+}
+
+//<Buttons>
+.link {
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 44px;
+}
+
+.button--text {
+  @extend .link;
+  color: $third-color;
+  font-weight: weight("medium");
+  &:hover {
+    color: $first-logo-color;
+  }
+}
+//Usual button
+.button--blue {
+  border-radius: 28.5px;
+  width: 170px;
+  background-color: $third-color;
+  padding: 15px 35px;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: weight("black");
+  @extend .link;
+}
+
+//Switch button
+span.switcher {
+  display: flex;
+  position: relative;
+  width: 292px; //246px
+  height: 68px;
+  border-radius: 60px;
+  
+  input {
+    
+    appearance: none;
+    position: relative;
+    width: 283px;
+    height: 57px;
+    border: 2px solid #ebebeb;
+    border-radius: 28.5px;
+    background-color:$third-color;
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: 700;
+    color: $primary-color;
+    
+    &:before, &:after {
+      
+      z-index:2;
+      position: absolute;
+      top:50%;
+      transform:translateY(-50%);
+      color:$primary-color;
+
+    }
+    &:before {
+      content: 'Monthly';
+      left:37px;
+    }
+    &:after {
+      content: 'Annually';
+      right:34px;
+
+    }
+  }
+  label {
+    z-index:1;
+    position: absolute;
+    top:5px;
+    bottom:16px;
+    border-radius:30px;
+  
+  }
+  &.switcher-1 {
+    input {
+        
+        transition:.15s -.1s;
+        &:checked {
+          background-color:$primary-color;
+        
+          &:before {
+            color:$primary-color;
+            transition: color .5s .2s;
+
+          }
+          &:after {
+            color: $switcher-inactive-color;
+            transition: color .5s;
+            opacity: 0.74;
+            font-weight: weight("medium");
+            
+          }
+          &+label {
+            left:5px;
+            right:151px;
+            background:$third-color;
+            transition: left .5s, right .4s .2s;
+        }
+        }
+        &:not(:checked) {
+          background:$third-color;
+          transition: background .5s -.1s;
+          
+          &:before {
+            color: $primary-color;
+            transition: color .5s;
+            opacity: 0.74;
+            font-weight: weight("medium");
+          }
+          &:after {
+            color:$third-color;
+            transition: color .5s .2s;
+
+          }
+          &+label {
+              left:140px;
+              right: 16px;
+              background:$primary-color;
+              transition: left .4s .2s, right .5s, background .35s -.1s;
+          }
+        }
+    }
+  }
+}
+
+//<Circle>
+.circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle--red {
+  @extend .circle;
+  background-color: $red-circle;
+}
+
+.circle--blue {
+  @extend .circle;
+  background-color: $blue-circle;
+}
+
+.circle--green {
+  @extend .circle;
+  background-color: $green-circle;
+}
+
+.inner__circle {
+  width: 58px;
+  height: auto;
+}
+
+//<Animated objects>
+//Purple cross
+.cross--purple {
+  width: 4px;
+  height: 14px;
+  background-color: $primary-figure-color;
+  filter: blur(0.4px);
+} 
+
+.cross--purple::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  background-color: $primary-figure-color;
+}
+
+.cross--purple::after {
+  transform: rotate(90deg)
+}
+
+//Blue cross
+.cross--blue {
+  width: 3px;
+  height: 20px;
+  background-color: $secondary-figure-color;
+  filter: blur(0.4px);
+}
+
+.cross--blue::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: $secondary-figure-color;
+}
+
+.cross--blue::after {
+  transform: rotate(90deg)
+}
+
+//Purple bagel
+.bagel {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  filter: blur(0.4px);
+}
+
+.bagel--purple {
+  border: 7.4px solid $primary-figure-color;
+}
+
+//Gradient bagel and with no background
+.bagel--gradient {
+  @extend .bagel;
+  background: $primary-gradient;
+}
+
+.bagel--gradient::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: translate(35%,35%);
+}
+
+//Gradient bagel with gradient and with white background
+.bagel--gradient-white {
+  @extend .bagel--gradient;
+}
+
+.bagel--gradient-white::after {
+  @extend .bagel--gradient::after;
+  background-color: $primary-color;
+}
+
+//Gradient bagel with gradient and with white background
+.bagel--gradient-blue {
+  @extend .bagel--gradient;
+}
+
+.bagel--gradient-blue::after {
+  @extend .bagel--gradient::after;
+  background-color: $second-logo-color;
+}
+
+//<Rectangles>
+.rectangle--purple {
+  width: 36px;
+  height: 36px;
+  border: 5px solid $primary-figure-color;
+  filter: blur(0.4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//<Menu burger>
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#hamnav {
+  display: flex;
+}
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+#hamitems { display: flex; }
+#hamitems a {
+  width: 20%; /* 100% / 5 tabs = 20% */
+  padding: 10px;
+  color: blue;
+  text-align: center;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* Show Hamburger Icon */
+  #hamnav label { 
+    display: inline-block; 
+    color: gray;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}

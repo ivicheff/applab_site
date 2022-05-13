@@ -1,0 +1,73 @@
+.header {
+
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__navbar {
+    margin-left: 290px;
+  }
+
+  &__intro {
+    max-width: 1042px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 6px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 519px;
+  }
+
+  &__plate {
+    margin-bottom: 15px;
+  }
+
+  &__heading {
+    line-height: 75px !important;
+    color: $second-logo-color;
+    margin-bottom:20px;
+    @include adaptiv-font(44, 32);
+  }
+
+  &__paragraph {
+    margin-bottom: 40px;
+    color: $seventh-color;
+    line-height: 28px !important;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button {
+    &:nth-child(1) {
+      margin-right: 28px;
+    }
+    &:nth-child(2) {
+    }
+
+  }
+
+  &__smartphone {
+    .smartphone-one {
+      height: 730px;
+    }
+    display: flex;
+  }
+}

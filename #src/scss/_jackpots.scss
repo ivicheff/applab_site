@@ -1,0 +1,67 @@
+.jackpots {
+
+  &__intro {
+    display: flex;
+  }
+
+  &__heading--intro {
+    font-size: 40px;
+    line-height: 50px;
+    color: $sixth-color;
+    display: flex;
+    align-self: flex-start;
+    margin-right: 78px;
+  }
+
+  &__paragraph--intro {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '';
+      margin-right: 48px;
+      width: 1px;
+      height: 147px;
+      opacity: 0.38;
+      background-color: $vertical-line;
+    }
+  }  
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    &>.circle--red, .circle--blue, .circle--green {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__inner-list {
+    .circle--red {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__paragraph {
+  }
+
+  &__heading--payouts {
+    color: $ninth-color
+  }
+
+  &__heading--network {
+    color: $tenth-color
+  }
+
+  &__heading--rewards {
+    color: $fourth-color
+  }
+}
+
+
+.inner__intro {
+  display: flex;
+
+}

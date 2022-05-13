@@ -1,0 +1,19 @@
+.rotation-slow {
+  animation: double-rotation 2s ease-in-out reverse 200ms;
+}
+
+.rotation-fast {
+  animation: one-rotation 1s cubic-bezier(0.68,-0.55,0.265,1.55) 300ms;
+}
+
+@keyframes double-rotation {
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes one-rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
